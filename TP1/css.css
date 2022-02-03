@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
 
-@font-face {
-	font-family: 'Roboto';
-    src: url('Roboto-ThinItalic-webfont.eot');
-    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-ThinItalic-webfont.woff') format('woff'),
-         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
-    font-weight: 200;
-    font-style: italic;
- }
 *{
 	font-family: "Roboto";
 }
@@ -112,6 +102,12 @@ nav a {
 .catalogue>section {
     align-items: center;
     width: 80%;
+	background-color: white;
+	PADDING-bottom: 50px;
+}
+
+.innercat{
+	display: flex;
 }
 
   /* -- Bandeau Réseau -- */
@@ -129,46 +125,222 @@ nav a {
 	margin-left: 10%;
 	background-color: rgba(0, 0, 0, 0.644);
 	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter:blur(2px);
 	padding: 30px;
 	border-radius: 20px;
 	font-size: 400%;
 }
 
 /* -- Tableauproduits -- */
-button{
-	background-color: #00b500;
-	padding: 5px;
-	color: white;
-	font-size: 120%;
-	border: 0;
-	border-radius: 5px;
+
+
+.products{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.products section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.products table{
+	border: 1px solid #d6d6d6;
+	margin-bottom: 1.6em;
+}
+
+.cadre{
+	background-color:white;
+	width: 90%;
+	margin: 0;
+	padding: 0;
+}
+
+.ref{
+	padding: 10px;
+}
+
+.caracteristique{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+table img{
+	width: 100%;
 }
 
 td p{
 	margin: 3px;
 }
+
 .produit{
 	font-size: 120%;
-	font-weight: bold;
+	font-weight: 400;
+}
+
+.details{
+	font-size: 85%;
+	font-weight: 300;
+}
+
+.prix{
+	font-size: 160%;
+	font-weight: 400;
 }
 
 
-
-
-
-
-
-.catalogue{
+button{
+	background-color: #00b500;
+	margin: 10px 15px 20px 40px;
+	padding: 5px;
+	color: white;
+	font-size: 140%;
+	border: 0;
+	border-radius: 5px;
+}
+.liste_page{
 	display: flex;
 	justify-content: center;
 }
-.catalogue>section{
-	width: 80%;
+
+.page{
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+}
+
+.number{
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	align-content: space-between;
+	justify-content: center;
+	border: 1px solid black;
+	border-radius: 100px;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	color: black;
+}
+
+.pasbord{
+	border: 0;
+}
+
+.couleur{
+	background-color: hsl(162deg 64% 55%);
+	border: none;
+	color: white;
+}
+
+.autre_page{
+	margin-top: 3px;
 }
 
 /* -- Filtres -- */
 .filtres{
 	background-color: #c4ffed;
+	width: 20%;	
+    margin-bottom: -50px;
+    display: flex;
+    justify-content: center;
+}
+.filtres form{
+	width: 100%;
+}
+.filtres form section{
+	justify-content: space-between;
+	display: flex;
+}
+.filtres input{
+	max-width: 60px;
+}
+.innerfiltres{
+	width: 70%;
+}
+.rightmargin{
+	margin-right: 37px;
+}
+h3{
+	margin-top: 35px;
+	margin-bottom: 5px;
+    font-weight: 100;
+}
+section.column {
+    flex-direction: column;
+}
+section.column section {
+    justify-content: left;
 }
 
+.column label {
+    margin-left: 7px;
+}
+
+
+
 /* -- Footer -- */
+footer{
+	background-color: #37b08d;
+	display: flex;
+	justify-content: center;
+}
+footer *{
+	color: #ebf7f3
+}
+footer>section{
+	width: 80%;
+}
+.hr{
+	border: 1px solid #87d0bc ;
+}
+.links section {
+    flex-direction: column;
+    display: flex;
+}
+section.links {
+    display: flex;
+	width: 90%;
+    justify-content: space-between;
+}
+.outerlinks{
+	display: flex;
+	justify-content: center;
+}
+.warning{
+	text-align: center;
+	color: #ebf7f3;
+}
+footer button {
+    max-width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+footer img{
+	max-width: 30px;
+}
+section.links a {
+    margin-bottom: 7px;
+    text-decoration: none;
+}
+section.links h2::after{
+	content: "";
+	display: block;
+	width: 65px;
+	padding-top: 7px;
+	border-bottom: 3px solid #ffffff;
+}
+.outerlinks button{
+	border-radius: 0;
+	background-color: #3bd9a9;
+	margin-bottom: 10px;
+}
+.outerlinks button p{
+	margin: 0;
+	padding: 10px;
+}

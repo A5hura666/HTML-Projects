@@ -1,77 +1,440 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8"/>
-		<title>Page personnelle de Yohann Chavanel</title>
-		<link rel="stylesheet" href="css.css">
-		<meta name="author" content="Yohann & Ethan">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	
-	<body>
-		<header>
-			<section>
-				<a href="#" ><img class="mainlogo" src="medias/images/myLogo.png" alt="Logo Site Veb" title="Logo"></a>
-				<form method="POST" action="recherche.php">
-					<input class="searchinmput" type="text" placeholder="Chercher un produit" name="search" id="search">
-				</form>
-				<a href="#" class="nbpanier"><img class="panier" src="medias/images/cart.png" alt="Panier" title="Panier"></a>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Page personnelle de Yohann Chavanel</title>
+	<link rel="stylesheet" href="css.css">
+	<meta name="author" content="Yohann & Ethan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+		<section>
+			<a href="#"><img class="mainlogo" src="medias/images/myLogo.png" alt="Logo Site Veb" title="Logo"></a>
+			<form method="POST" action="recherche.php">
+				<input class="searchinmput" type="text" placeholder="Chercher un produit" name="search" id="search">
+			</form>
+			<a href="#" class="nbpanier"><img class="panier" src="medias/images/cart.png" alt="Panier"
+					title="Panier"></a>
+		</section>
+	</header>
+
+
+	<nav>
+		<section>
+			<a href="#">TOUS LES PRODUITS</a>
+			<a class="active" href="#">RESEAU</a>
+			<a href="#">COMPOSANTS</a>
+			<a class="derniernav" href="#">PERIPHERIQUES</a>
+		</section>
+	</nav>
+
+
+
+
+	<section class="catalogue">
+		<section>
+			<section class="bandeaureseau">
+				<h1>Réseau</h1>
 			</section>
-		</header>
 
-
-		<nav>
-			<section>
-				<a href="#">TOUS LES PRODUITS</a>
-				<a class="active" href="#">RESEAU</a>
-				<a href="#">COMPOSANTS</a>
-				<a class="derniernav" href="#">PERIPHERIQUES</a>
-			</section>
-		</nav>
-
-
-
-
-		<section class="catalogue">
-			<section>
-				<section class="bandeaureseau">
-					<h1>Réseau</h1>
-				</section>
+			<section class="innercat">
 
 				<section class="filtres">
-					
+
+					<section class="innerfiltres">
+
+						<h2>Recherche</h2>
+						<form>
+							<h3>Longueur</h3>
+							<section>
+								<label>Min</label>
+								<label class="rightmargin">Max</label>
+							</section>
+							<section>
+								<input type="number" placeholder="cm">
+								<input type="number" placeholder="cm">
+							</section>
+
+							<h3>Longueur</h3>
+							<section>
+								<label>Min</label>
+								<label class="rightmargin">Max</label>
+							</section>
+							<section>
+								<input type="number" placeholder="cm">
+								<input type="number" placeholder="cm">
+							</section>
+
+							<h3>Catégorie</h3>
+							<section class="column">
+								<section>
+									<input type="checkbox" name="Cat4" id="Cat4"><label>Cat4</label>
+								</section>
+								<section>
+									<input type="checkbox" name="Cat5" id="Cat5"><label>Cat5</label>
+								</section>
+								<section>
+									<input type="checkbox" name="Cat6" id="Cat6"><label>Cat6</label>
+								</section>
+								<section>
+									<input type="checkbox" name="Cat8" id="Cat8"><label>Cat8</label>
+								</section>
+							</section>
+						</form>
+					</section>
 				</section>
-				
-				<section class="products">
-					<fieldset>
-						<table>
-							<tr>
-								<td colspan="2">
-									<img src="medias/images/ethernet.jpg" alt="cable ethernet">
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p class="produit">Cable ethernet RJ45</p>	
-									<p class="details">1,5 mètres, CAT 6</p>
-									<p class="prix">12€00</p>
-								</td>
-								<td>
-									<button>Ajouter au panier</button>
-								</td>
-							</tr>
-						</table>
-					</fieldset>
+				<section>
+
+					<section class="products">
+						<section>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+						</section>
+						<section>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+						</section>
+						<section>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+						</section>
+						<section>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+							<table cellspacing="0" cellpading="0" class="cadre">
+								<tr>
+									<td colspan="2">
+										<img src="medias/images/ethernet.jpg" alt="cable ethernet">
+									</td>
+								</tr>
+								<tr class="ref">
+									<td class="caracteristique">
+										<p class="produit">Cable ethernet RJ54</p>
+										<p class="details">1,5 mètres, CAT 6</p>
+										<p class="prix">12€00</p>
+									</td>
+									<td>
+										<button>Ajouter au panier</button>
+									</td>
+								</tr>
+							</table>
+						</section>
+					</section>
+
+					<section class="liste_page">
+						<section class="page">
+							<a href="#" class="number pasbord">&lt;</a>
+							<a href="#" class="number">1</a>
+							<a href="#" class="number couleur">2</a>
+							<a href="#" class="number">3</a>
+							<p class="autre_page">...</p>
+							<a href="#" class="number">14</a>
+							<a href="#" class="number">15</a>
+							<a href="#" class="number">16</a>
+							<a href="#" class="number pasbord">&gt;</a>
+						</section>
+					</section>
 				</section>
 			</section>
 		</section>
+	</section>
 
 
 
 
 
-		<footer>
+	<footer>
+		<section>
+			<section class="warning">
+				<p>Les photos des articles ne sont pas contractuelles</p>
+				<hr>
+			</section>
+			<section class="outerlinks">
+				<section class="links">
+					<section>
+						<h2>SERVICES D'AIDE</h2>
+						<a href="#">FAQ</a>
+						<a href="#">Montage de PC</a>
+						<a href="#">Garanties</a>
+						<a href="#">SAV</a>
+					</section>
+					<section>
+						<h2>QUI SOMMES NOUS ?</h2>
+						<a href="#">L'entreprise</a>
+						<a href="#">Le groupe</a>
+						<a href="#">CGV</a>
+						<a href="#">CGU</a>
+						<a href="#">Mentions légales</a>
+					</section>
+					<section>
+						<h2>NOUS REJOINDRE</h2>
+						<a href="#">Devenir franchisé</a>
+						<a href="#">Recrutement</a>
+						<a href="#">Marketplace</a>
+					</section>
+					<section>
+						<h2>NOUS CONTACTER</h2>
+						<button><img src="medias/images/email-open.png">
+							<p>PAR EMAIL</p>
+						</button>
+						<button><img src="medias/images/phone.png">
+							<p>PAR TELEPHONE</p>
+						</button>
+					</section>
+				</section>
+			</section>
+		</section>
+	</footer>
+</body>
 
-		</footer>
-	</body>
 </html>
