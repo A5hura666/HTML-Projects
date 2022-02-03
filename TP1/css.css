@@ -2,10 +2,11 @@
 	--navheight: 30px;
 }
 
-body,ul{
+body{
 	margin: 0;
 	padding: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: #d3d3d3;
 }
 /* -- Header -- */
 
@@ -56,29 +57,16 @@ form{
 
 
 /* -- Navbar -- */
+
 nav{
 	display: flex;
 	width: 100%;
 	background-color: #2e7d67;
     justify-content: center;
+	z-index: 2;
 }
 nav ul {
     width: 80%;
-}
-nav ul li{
-	float: left;
-	list-style: none;
-	width: 24%;
-	align-items: center;
-    height: var(--navheight);
-	border-right: 1px solid white;
-	text-align: center;
-}
-nav ul li:hover{
-	background-color: #37b08d;
-}
-nav ul li:active{
-	background-color: #267c7c;
 }
 .derniernav{
 	border: 0;
@@ -88,26 +76,89 @@ nav *{
 	text-decoration: none;
 	font-weight: 500;
 }
+nav a {
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+	align-items: center;
+}
 .active{
 	background-color: #45d6ab;
 }
+nav>section{
+	display: flex;
+	width: 80%;
+	height: 35px;
+}
+nav a {
+    border-right: 1px solid white;
+}
 
-
-
-
-/* -- Bandeau Réseau -- */
-
-.bandeaureseau{
+/* ------  CATALOGUE ------ */
+.catalogue{
 	display: flex;
 	justify-content: center;
 }
+.catalogue>section {
+    align-items: center;
+    width: 80%;
+}
 
+  /* -- Bandeau Réseau -- */
+
+
+.bandeaureseau{
+    background-image: url(medias/images/network.jpg);
+    height: 300px;
+    display: flex;
+	box-shadow: 0 0 20px #000000ab;
+}
+
+.bandeaureseau h1{
+	color: white;
+	margin-left: 10%;
+	background-color: rgba(0, 0, 0, 0.644);
+	backdrop-filter: blur(2px);
+	padding: 30px;
+	border-radius: 20px;
+	font-size: 400%;
+}
 
 /* -- Tableauproduits -- */
+button{
+	background-color: #00b500;
+	padding: 5px;
+	color: white;
+	font-size: 120%;
+	border: 0;
+	border-radius: 5px;
+}
+
+td p{
+	margin: 3px;
+}
+.produit{
+	font-size: 120%;
+	font-weight: bold;
+}
 
 
+
+
+
+
+
+.catalogue{
+	display: flex;
+	justify-content: center;
+}
+.catalogue>section{
+	width: 80%;
+}
 
 /* -- Filtres -- */
-
+.filtres{
+	background-color: #c4ffed;
+}
 
 /* -- Footer -- */
