@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1200px){
+    
+    /* Ex pour le catalogue. Il reste plus qu'a le faire pour les autres :)*/
+    .catalogue>section{
+        width: 100%;
+    }
+
+    header section{
+        width: 99%;
+    }
+
+    nav>section{
+        width: 100%;
+    }
+
+    .bandeaureseau{
+        height: 250px;
+    }
+
+    footer>section{
+        width: 100%;
+    }
+
+    footer button{
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .filtres{
+        width: 125%;
+    }
+}
