@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1178px){
     
     /* Ex pour le catalogue. Il reste plus qu'a le faire pour les autres :)*/
     .catalogue>section{
@@ -28,5 +28,64 @@
 
     .filtres{
         width: 125%;
+    }
+
+    .products{
+        padding: 0;
+    }
+
+    .products table{
+        max-width: 280px;
+        margin: 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 827px){
+
+}
+
+@media only screen and (max-width: 580px){
+
+    header{
+        height: 150px;
+        justify-content: space-evenly;
+    }
+
+    header button{
+        display: flex;
+        margin: 0;
+    }
+
+    .mainlogo{
+        max-width: 115px;
+    }
+
+    header form{
+        display: none;
+    }
+
+    .telephone_maison{
+        display: block;
+        width: 98%;
+    }
+
+    nav{
+        display: none;
+    }
+    section .bandeaureseau{
+        display: none;
+    }
+
+    .innercat{
+        flex-direction: column;
+    }    
+    aside {
+        max-height: 185px;
+        overflow: hidden;
+    }
+
+    .innercat section{
+        flex-basis: 95%;
     }
 }
