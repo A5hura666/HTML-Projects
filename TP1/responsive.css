@@ -46,10 +46,16 @@
 }
 
 @media only screen and (max-width: 580px){
+    
+    button{
+        
+        margin: 3px 0px 0px 4px;
+    }
     .products table{
         
         max-width: 245px;
         margin: 5px;
+        flex-basis: 47%;
     }
     
     header{
@@ -103,5 +109,8 @@
     }
     h3{
         margin-top: 0;
+    }
+    .hbg:hover + .responsivenav{
+        display: flex;
     }
 }
