@@ -1,6 +1,5 @@
 @media only screen and (max-width: 1178px){
     
-    /* Ex pour le catalogue. Il reste plus qu'a le faire pour les autres :)*/
     .catalogue>section{
         width: 100%;
     }
@@ -32,6 +31,7 @@
 
     .products{
         padding: 0;
+        margin-top: 50px;
     }
 
     .products table{
@@ -46,7 +46,12 @@
 }
 
 @media only screen and (max-width: 580px){
-
+    .products table{
+        
+        max-width: 245px;
+        margin: 5px;
+    }
+    
     header{
         height: 150px;
         justify-content: space-evenly;
@@ -87,5 +92,16 @@
 
     .innercat section{
         flex-basis: 95%;
+    }
+    .links{
+        flex-direction: column;
+        width: 40% !important;
+    }
+    .innerfiltres form {
+        display: flex;
+        flex-direction: row;
+    }
+    h3{
+        margin-top: 0;
     }
 }

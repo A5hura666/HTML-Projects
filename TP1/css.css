@@ -285,6 +285,7 @@ aside{
     margin-bottom: -50px;
     display: flex;
     justify-content: center;
+    min-width: 160px;
 }
 .innercat section {
     flex-basis: 85%;
@@ -384,4 +385,18 @@ section.links h2::after{
 .outerlinks button p{
 	margin: 0;
 	padding: 10px;
+}
+
+.searchfilters>section {
+    display: flex;
+    flex-direction: column;
+	justify-content: flex-start;
+}
+.innerfiltres>form>section {
+    display: flex;
+    flex-direction: column;
+}
+.innerfiltres form {
+    display: flex;
+    flex-direction: column;
 }
