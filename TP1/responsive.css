@@ -113,4 +113,7 @@
     .hbg:hover + .responsivenav{
         display: flex;
     }
+    .responsivenav>section:hover + .responsivenav{
+        display: flex;
+    }
 }

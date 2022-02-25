@@ -443,7 +443,7 @@ section.links h2::after{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 100px;
+    padding-top: 100px;
     height: 80%;
     justify-content: flex-start;
 }
