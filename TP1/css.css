@@ -102,6 +102,11 @@ nav{
     justify-content: center;
 	z-index: 2;
 }
+
+nav section a:hover {
+    background-color: #45d6ab;
+}
+
 nav ul {
     width: 80%;
 }
@@ -231,7 +236,6 @@ td p{
 	font-weight: 400;
 }
 
-
 button{
 	background-color: #00b500;
 	margin: 10px 15px 20px 40px;
@@ -241,6 +245,11 @@ button{
 	border: 0;
 	border-radius: 5px;
 }
+
+button.btn:active {
+    background-color: #44d4a9;
+}
+
 .liste_page{
 	display: flex;
 	justify-content: center;
@@ -250,6 +259,12 @@ button{
 	display: flex;
 	justify-content: space-between;
 	max-width: 350px;
+}
+
+a.number:hover {
+	background-color: hsl(162deg 64% 55%);
+	border: none;
+	color: white;
 }
 
 .number{
@@ -404,8 +419,9 @@ section.links h2::after{
 }
 
 
-
-
+button{
+	cursor: pointer;
+}
 
 
 

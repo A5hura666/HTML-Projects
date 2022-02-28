@@ -1,5 +1,5 @@
-let boutton = document.querySelectorAll(".btn");
-let nbarticle=0
+var boutton = document.querySelectorAll(".btn");
+var nbarticle=0
 
 function incrementPanier() {
     nbarticle++;
@@ -8,6 +8,6 @@ function incrementPanier() {
 
 console.log(boutton)
 
-for(let i=0; i< boutton.length; i++){
+for(var i=0; i< boutton.length; i++){
     boutton[i].addEventListener('click',incrementPanier)
 }
