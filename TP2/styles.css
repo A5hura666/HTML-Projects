@@ -1,0 +1,146 @@
+.boldText{
+    font-weight: bold;
+}
+
+.italicText{
+    font-style: italic;
+}
+
+.underlineText{
+    text-decoration: underline;
+}
+
+.redText{
+    color: red
+}
+
+/* ========== NOT FOR TP PRUPOSES ============ */
+/* ========== PAGE STYLING ============ */
+
+section{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#step1{
+    background-color: aliceblue;
+}
+
+#step2{
+    background-color: lightyellow;
+}
+
+#step3{
+    background-color: lavender;
+}
+
+#bonusStep{
+    background-color: seashell;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    background-color: teal;
+    color:white;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* Step1 */
+
+#step1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#step1 output{
+    min-width: 20px;
+    min-height: 50px;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px dashed black;
+}
+
+/* Step 2 */
+
+#step2{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#step2 > *{
+    margin-top: 20px;
+}
+
+#step2 h1{
+    flex-basis: 100%;
+}
+
+#step2 article{
+    flex-basis: 50%;
+}
+
+#step2 button{
+    flex-basis: 100%;
+}
+
+#step2 .statInput{
+    border: 1px solid black;
+    padding: 2px;
+}
+
+#statsInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#statsInfo > *{
+    margin-top: 10px;
+}
+
+#statsInfo label{
+    flex-basis: 30%;
+}
+
+#statsInfo output{
+    flex-basis: 60%;
+    border: 1px dashed black;
+    min-height: 20px;
+    padding: 3px;
+    text-align: right;
+}
+
+/* Step 3 */
+
+#step3{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#step3 > *{
+    margin-top: 10px;
+}
+
+#step3 h1, #step3 p{
+    flex-basis:100%;
+}
+
+#step3 fieldset{
+    flex-basis:15%;
+}
