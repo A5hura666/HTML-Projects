@@ -4,7 +4,6 @@ let valeur = document.querySelectorAll(".statInput");
 let compteur = 0;
 
 function paragraphe() {
-    console.log("Le bouton est cliqué");
     compteur++;
     console.log("compteur=" + compteur);
     document.querySelector("output").innerHTML = compteur;
@@ -12,13 +11,32 @@ function paragraphe() {
     paraph.textContent = "Le bouton est cliqué " + compteur;
     document.querySelector("#step1").appendChild(paraph);
 }
+/* Etape 1 */
 document.querySelector("#step1 button").addEventListener("click", paragraphe);
-
+/* Etape 2 */
 document.querySelector("#step2 button").addEventListener("click", somme);
 document.querySelector("#step2 button").addEventListener("click", produit);
 document.querySelector("#step2 button").addEventListener("click", moyenne);
 document.querySelector("#step2 button").addEventListener("click", max);
 document.querySelector("#step2 button").addEventListener("click", min);
+/* Etape 3 */
+document.querySelector("#boldOn").addEventListener("click", boldOn);
+document.querySelector("#boldOff").addEventListener("click", boldOff);
+
+document.querySelector("#italicOn").addEventListener("click", italicTextOn);
+document.querySelector("#italicOff").addEventListener("click", italicTextOff);
+
+document.querySelector("#underlineOn").addEventListener("click", underlineTextOn);
+document.querySelector("#underlineOff").addEventListener("click", underlineTextOff);
+
+document.querySelector("#underlineOn").addEventListener("click", underlineTextOn);
+document.querySelector("#underlineOff").addEventListener("click", underlineTextOff);
+
+document.querySelector("#redTextOn").addEventListener("click", redTextOn);
+document.querySelector("#redTextOff").addEventListener("click", redTextOff);
+
+/* Bonus */
+let bonuscheck = document.querySelector("#bonusStep output").innerHTML
 
 let addition = 0;
 function somme() {
@@ -52,37 +70,20 @@ function moyenne() {
     }
 }*/
 
+let chiffres = [];
+for (let i = 0; i < valeur.length; i++) {
+    chiffres.push(parseInt(valeur[i].textContent));
+}
+
 function max() {
-    let chiffres = [];
-    for (let i = 0; i < valeur.length; i++) {
-        chiffres.push(parseInt(valeur[i].textContent));
-    }
     document.querySelector("#statMax").innerHTML = Math.max.apply(null, chiffres);
 }
 function min() {
-    let chiffres = [];
-    for (let i = 0; i < valeur.length; i++) {
-        chiffres.push(parseInt(valeur[i].textContent));
-    }
     document.querySelector("#statMin").innerHTML = Math.min.apply(null, chiffres);
 }
 
-/* mise en forme */
 
-document.querySelector("#boldOn").addEventListener("click", boldOn);
-document.querySelector("#boldOff").addEventListener("click", boldOff);
 
-document.querySelector("#italicOn").addEventListener("click", italicTextOn);
-document.querySelector("#italicOff").addEventListener("click", italicTextOff);
-
-document.querySelector("#underlineOn").addEventListener("click", underlineTextOn);
-document.querySelector("#underlineOff").addEventListener("click", underlineTextOff);
-
-document.querySelector("#underlineOn").addEventListener("click", underlineTextOn);
-document.querySelector("#underlineOff").addEventListener("click", underlineTextOff);
-
-document.querySelector("#redTextOn").addEventListener("click", redTextOn);
-document.querySelector("#redTextOff").addEventListener("click", redTextOff);
 
 let texte = document.querySelector("#step3 p");
 
@@ -119,28 +120,28 @@ function redTextOff() {
 }
 
 
+
 /*Bonus*/
 
 document.querySelector("#bonusStep button").addEventListener("click", jeu);
 let compteur1 = 0;
-let nb_alea = parseInt(Math.random()*100)
+let nb_alea = parseInt(Math.random() * 100)
 
-function jeu(){
-    compteur1 ++ ;
+function jeu() {
+    compteur1++;
+
     let input = document.getElementById("userAnswer").value;
 
-    if(input<nb_alea){
-    document.querySelector("#bonusStep output").innerHTML = "le nombre "+ input +" est trop petit: " + compteur1;
+    if (input < nb_alea) {
+        bonuscheck = "le nombre " + input + " est trop petit";
     }
 
-    if(input==nb_alea){
-    document.querySelector("#bonusStep output").innerHTML = "le nombre "+ input +" est égale: " + compteur1;
+    if (input == nb_alea) {
+        bonuscheck = "Braveau! Vous avez trouvé le bon nombre (" + input + ") en " + compteur1 + " essais";
     }
 
-    if(input>nb_alea){
-    document.querySelector("#bonusStep output").innerHTML = "le nombre "+ input +" est trop grand: " + compteur1;
+    if (input > nb_alea) {
+        bonuscheck = "le nombre " + input + " est trop grand";
     }
-    
-    /*console.log(parseInt(nb_alea))*/
     console.log(nb_alea)
 }

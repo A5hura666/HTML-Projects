@@ -101,6 +101,7 @@ nav{
 	background-color: #2e7d67;
     justify-content: center;
 	z-index: 2;
+    position: relative;
 }
 
 nav section a:hover {
@@ -146,6 +147,7 @@ nav a {
     width: 80%;
 	background-color: white;
 	PADDING-bottom: 50px;
+    box-shadow: 0 0 20px #000000ab;
 }
 
 .innercat{
@@ -161,6 +163,8 @@ nav a {
     display: flex;
 	box-shadow: 0 0 20px #000000ab;
     align-items: center;
+    z-index: 1;
+    position: relative;
 }
 
 .bandeaureseau h1{
@@ -346,6 +350,8 @@ footer{
 	background-color: #37b08d;
 	display: flex;
 	justify-content: center;
+    z-index: 2;
+    position: relative;
 }
 footer *{
 	color: #ebf7f3
