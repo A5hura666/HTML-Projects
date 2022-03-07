@@ -36,7 +36,7 @@ document.querySelector("#redTextOn").addEventListener("click", redTextOn);
 document.querySelector("#redTextOff").addEventListener("click", redTextOff);
 
 /* Bonus */
-let bonuscheck = document.querySelector("#bonusStep output").innerHTML
+let bonuscheck = document.querySelector("#bonusStep output")
 
 let addition = 0;
 function somme() {
@@ -133,15 +133,15 @@ function jeu() {
     let input = document.getElementById("userAnswer").value;
 
     if (input < nb_alea) {
-        bonuscheck = "le nombre " + input + " est trop petit";
+        bonuscheck.innerHTML = "le nombre " + input + " est trop petit";
     }
 
     if (input == nb_alea) {
-        bonuscheck = "Braveau! Vous avez trouvé le bon nombre (" + input + ") en " + compteur1 + " essais";
+        bonuscheck.innerHTML = "Braveau! Vous avez trouvé le bon nombre (" + input + ") en " + compteur1 + " essais";
     }
 
     if (input > nb_alea) {
-        bonuscheck = "le nombre " + input + " est trop grand";
+        bonuscheck.innerHTML = "le nombre " + input + " est trop grand";
     }
     console.log(nb_alea)
 }
