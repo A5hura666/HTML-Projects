@@ -137,7 +137,7 @@ function jeu() {
     }
 
     if (input == nb_alea) {
-        bonuscheck.innerHTML = "Braveau! Vous avez trouvé le bon nombre (" + input + ") en " + compteur1 + " essais";
+        bonuscheck.innerHTML = "Bravo! Vous avez trouvé le bon nombre (" + input + ") en " + compteur1 + " essais";
     }
 
     if (input > nb_alea) {
