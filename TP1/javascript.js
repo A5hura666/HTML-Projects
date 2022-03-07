@@ -1,24 +1,22 @@
-var boutton = document.querySelectorAll(".btn");
-var nbarticle=0
+let boutton = document.querySelectorAll(".btn");
+let nbarticle=0
+
+function easter_egg(){
+    if (nbarticle==10){
+        video.classList.add("easter");
+    }
+}
 
 function incrementPanier() {
     nbarticle++;
     document.querySelector(".nb_article").innerHTML = nbarticle
+    easter_egg()
 }
 
 console.log(boutton)
 
-for(var i=0; i< boutton.length; i++){
+for(let i=0; i< boutton.length; i++){
     boutton[i].addEventListener('click',incrementPanier)
 }
 
-
-var nav= document.querySelectorAll(".navet");
-
-function chgNav(x){
-    document.querySelector(".active").classList.remove("active")
-}
-
-for(var i=0; i< nav.length; i++){
-    boutton[i].addEventListener('click',chgNav(boutton[i]))
-}
+let video = document.querySelector("body iframe");

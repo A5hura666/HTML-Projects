@@ -42,9 +42,7 @@
 }
 
 @media only screen and (max-width: 827px){
-    .searchfilters {
-        flex-direction: column;
-    }
+
 }
 
 @media only screen and (max-width: 580px){
@@ -117,8 +115,5 @@
     }
     .responsivenav>section:hover + .responsivenav{
         display: flex;
-    }
-    .searchfilters {
-        flex-direction: row;
     }
 }
