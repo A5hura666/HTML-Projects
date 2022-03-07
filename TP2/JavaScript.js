@@ -123,25 +123,24 @@ function redTextOff() {
 
 document.querySelector("#bonusStep button").addEventListener("click", jeu);
 let compteur1 = 0;
+let nb_alea = parseInt(Math.random()*100)
 
 function jeu(){
-    let input = document.getElementById("userAnswer").value;
-    let nb_alea = parseInt(Math.random()*100)
     compteur1 ++ ;
+    let input = document.getElementById("userAnswer").value;
 
     if(input<nb_alea){
-    console.log("le nombre est trop grand")
+    document.querySelector("#bonusStep output").innerHTML = "le nombre "+ input +" est trop petit: " + compteur1;
     }
 
     if(input==nb_alea){
-    console.log("le nombre est trop égale")
+    document.querySelector("#bonusStep output").innerHTML = "le nombre "+ input +" est égale: " + compteur1;
     }
 
     if(input>nb_alea){
-    console.log("le nombre est trop petit")
-    document.querySelector("#step3 output").innerHTML = compteur1;
+    document.querySelector("#bonusStep output").innerHTML = "le nombre "+ input +" est trop grand: " + compteur1;
     }
     
     /*console.log(parseInt(nb_alea))*/
-    console.log(compteur1)
+    console.log(nb_alea)
 }
