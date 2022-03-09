@@ -1,0 +1,116 @@
+@media only screen and (max-width: 1178px){
+    
+    .catalogue>section{
+        width: 100%;
+    }
+
+    header section{
+        width: 99%;
+    }
+
+    nav>section{
+        width: 100%;
+    }
+
+    .bandeaureseau{
+        height: 250px;
+    }
+
+    footer>section{
+        width: 100%;
+    }
+
+    footer button{
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .filtres{
+        width: 125%;
+    }
+
+    .products{
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .products table{
+        max-width: 280px;
+        margin: 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 827px){
+
+}
+
+@media only screen and (max-width: 580px){
+    
+    button{
+        
+        margin: 3px 0px 0px 4px;
+    }
+    .products table{
+        
+        max-width: 245px;
+        margin: 5px;
+        flex-basis: 47%;
+    }
+    
+    header{
+        height: 150px;
+        justify-content: space-evenly;
+    }
+
+    header button{
+        display: flex;
+        margin: 0;
+    }
+
+    .mainlogo{
+        max-width: 115px;
+    }
+
+    header form{
+        display: none;
+    }
+
+    .telephone_maison{
+        display: block;
+        width: 98%;
+    }
+
+    nav{
+        display: none;
+    }
+    section .bandeaureseau{
+        display: none;
+    }
+
+    .innercat{
+        flex-direction: column;
+    }    
+    aside {
+        max-height: 185px;
+        overflow: hidden;
+    }
+
+    .innercat section{
+        flex-basis: 95%;
+    }
+    .links{
+        flex-direction: column;
+        width: 40% !important;
+    }
+    .innerfiltres form {
+        display: flex;
+        flex-direction: row;
+    }
+    h3{
+        margin-top: 0;
+    }
+    .hbg:hover + .responsivenav{
+        display: flex;
+    }
+}
