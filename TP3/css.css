@@ -484,3 +484,20 @@ iframe {
     display: flex;
     width: 100%;
 }
+
+
+/* Modal */
+
+.modal{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-color: beige;
+	text-align: center;
+	font-size: 100px;
+	padding-top: 300px;
+}
+
+.modalnul{
+	display: none;
+}
