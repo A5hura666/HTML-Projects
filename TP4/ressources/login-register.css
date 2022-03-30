@@ -1,0 +1,109 @@
+html{
+    background-image: url(/TP4/medias/img/trainvitefondvitesseconnexion.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    user-select: none;
+}
+body>section{
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: white;
+    width: 90%;
+    max-width: 320px;
+    height: 100vh;
+    max-height: 460px;
+    
+    padding: 30px;
+}
+.boutons{
+    display: flex;
+    flex-direction: column;
+}
+article{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+h1{
+    font-size:50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-size: 25px;
+    margin: 0;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+}
+
+.inscript{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 75%;
+    justify-content: space-evenly;
+}
+
+input{
+    border-radius: 10px;
+    border: gray solid 1px;
+    background-color: grey; 
+}
+
+#submit,#bouton{
+    border-radius: 20px;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.boutons *,input{
+    background-color: rgba(255, 255, 255, 0.178);
+    border: 0;
+    color: whitesmoke;
+    padding: 7px 28px;
+}
+section.bref {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: 100%;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: #ffffff73;
+}
+.bref article * {
+    width: 250px;
+}
+
+p{
+    text-align: center;
+}
+
+label{
+    text-align: left;
+}

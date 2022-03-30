@@ -1,0 +1,41 @@
+:root {
+    --card-radius: 40px;
+    --fds-font-family-fallback: "Segoe UI", system-ui, sans-serif;
+    --fds-font-family-text: "Segoe UI Variable Text", "Seoge UI Variable Static Text", var(--fds-font-family-fallback);
+    --fds-font-family-small: "Segoe UI Variable Small", "Seoge UI Variable Static Small", var(--fds-font-family-fallback);
+    --fds-font-family-display: "Segoe UI Variable Display", "Seoge UI Variable Static Display", var(--fds-font-family-fallback);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		/* Texts */
+		--default-color: #000000de;
+		--text-secondary: #000000c8;
+		--text-tertiary: #0000005c;
+		
+		/* Colors */
+		--bg-color: white;
+		
+	}
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Texts */
+		--default-color: #ffffffde;
+		--text-secondary: #ffffffc8;
+		--text-tertiary: #d4d4d466;
+
+		/* Colors */
+		--bg-color:#212121;
+	}
+}
+*{
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+html{
+    background-color: var(--bg-color);
+}
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+}

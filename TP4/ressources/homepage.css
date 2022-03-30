@@ -1,0 +1,45 @@
+@media (prefers-color-scheme: light) {
+	:root {
+
+	}
+	body{
+		background-image: url(/TP4/medias/img/darkhomepage.jpg);
+	}
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		
+	}
+	
+	body{
+		background-image: url(/TP4/medias/img/darkhomepage.jpg);
+	}
+}
+
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.fondflou{
+	backdrop-filter: blur(20px);
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 50px;
+	align-items: center;
+}
+nav img{
+	width: 20px;
+	height: 20px;
+}
+nav input{
+	width: 370px;
+	background-color: black;
+	border: 0;
+	border-radius: 100px;
+	height: 30px;
+	padding: 0px 15px;
+}
