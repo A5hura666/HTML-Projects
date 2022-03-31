@@ -1,8 +1,13 @@
+*{
+    user-select: none;
+}
+
 html{
     background-image: url(/TP4/medias/img/trainvitefondvitesseconnexion.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 body{
     height: 100vh;
     backdrop-filter: blur(20px);
@@ -11,30 +16,42 @@ body{
     align-items: center;
     justify-content: center;
 }
-*{
-    user-select: none;
-}
-body>section{
+
+
+/*pour page inscription1*/
+.sect_ins{
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.849);
-    color: white;
+    background-color: var(--card);
+    color: var(--default-color);
     width: 90%;
     max-width: 320px;
     height: 100vh;
     max-height: 460px;
-    
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*pour page inscription2*/
+.sect_ins2{
+    border-radius: 15px;
+    background-color: var(--card);
+    color: var(--default-color);
+    width: 90%;
+    max-width: 320px;
+    height: 100vh;
+    max-height: 460px;
     padding: 30px;
 }
+
+/*Bouton Connexion/validation/Retour/Suivant*/
 .boutons{
     display: flex;
     flex-direction: column;
 }
-article{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
 
+/*Intitulé Connexion*/
 h1{
     font-size:50px;
     margin: 0;
@@ -47,6 +64,21 @@ h2{
     margin: 0;
 }
 
+/*Formulaire*/
+.title{
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+article{
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 form{
     display: flex;
     align-items: center;
@@ -55,18 +87,16 @@ form{
     justify-content: space-evenly;
 }
 
+.form_inscript{
+    width: 75%;
+}
+
 .inscript{
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 75%;
-    justify-content: space-evenly;
-}
-
-input{
-    border-radius: 10px;
-    border: gray solid 1px;
-    background-color: grey; 
+    justify-content: space-between;
 }
 
 #submit,#bouton{
@@ -79,13 +109,17 @@ input{
     justify-content: space-evenly;
     width: 100%;
 }
-.boutons *,input{
-    background-color: rgba(255, 255, 255, 0.178);
+
+/*Style Formulaire*/
+input{
+    background-color: var(--box);
     border: 0;
-    color: whitesmoke;
+    color: var(--default-color);
     padding: 7px 28px;
+    width: 120px;
+    border-radius: 10px;
 }
-section.bref {
+section.form_connexion {
     display: flex;
     flex-direction: column;
     height: 140px;
@@ -94,14 +128,14 @@ section.bref {
 }
 a {
     text-decoration: none;
-    color: #ffffff73;
+    color: var(--text-tertiary);
 }
-.bref article * {
+.form_connexion article * {
     width: 250px;
 }
 
 p{
-    text-align: center;
+    text-align: left;
 }
 
 label{

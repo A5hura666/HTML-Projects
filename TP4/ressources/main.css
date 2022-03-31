@@ -9,24 +9,32 @@
 @media (prefers-color-scheme: light) {
 	:root {
 		/* Texts */
+		--titlecolor: black;
 		--default-color: #000000de;
 		--text-secondary: #000000c8;
 		--text-tertiary: #0000005c;
 		
 		/* Colors */
 		--bg-color: white;
+		--card:rgba(255, 255, 255, 0.849);
+		--box:rgba(189, 189, 189, 0.849);
 		
 	}
 }
 @media (prefers-color-scheme: dark) {
 	:root {
 		/* Texts */
+		
+		--titlecolor: white;
 		--default-color: #ffffffde;
 		--text-secondary: #ffffffc8;
 		--text-tertiary: #d4d4d466;
 
 		/* Colors */
 		--bg-color:#212121;
+		--card:rgba(0, 0, 0, 0.849);
+		--box:rgba(37, 37, 37, 0.849);
+		--accentcolor: rgba(0, 174, 255, 0.664);
 	}
 }
 *{
@@ -38,4 +46,18 @@ html{
 body {
     scroll-behavior: smooth;
     margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Segoe UI", system-ui, sans-serif;
+	font-weight: 400;
+	color: var(--titlecolor)
+}
+p, span{
+	color: var(--default-color);
+}
+
+/* Forms */
+input{
+	color: whitesmoke;
 }

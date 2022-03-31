@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <title>Page personnelle de Yohann Chavanel</title>
-	<link rel="stylesheet" href="../ressources/main.css">
+    <link rel="stylesheet" href="../ressources/main.css">
     <link rel="stylesheet" href="../ressources/login-register.css">
     <meta name="author" content="Yohann & Ethan">
 </head>
 
 <body>
-    <section>
+    <section class="sect_ins">
         <article>
             <h1>Connexion</h1>
             <h2>TEF</h2>
         </article>
         <form action="post">
-            <section class="bref">
+            <section class="form_connexion">
                 <article>
-                    <label for="identifiant">Adresse Mail / identifiant</label>
-                    <input type="email" id="identifiant" name="identifiant" placeholder="email / Identifiant">
+                    <label for="identifiant">Identifiant</label>
+                    <input type="text" id="identifiant" name="identifiant" placeholder="Identifiant">
                 </article>
                 <article>
                     <label for="password">Mot de passe</label>
@@ -28,9 +28,9 @@
             </section>
             <section class="boutons">
                 <input id="submit" type="submit" value="Valider">
-                <input id="bouton" type="button" value="Inscription">
-                <!-- <a href="inscription.html">
-                </a> -->
+                <a href="inscription.html">
+                    <input id="bouton" type="button" value="Inscription">
+                </a>
             </section>
         </form>
         <a href="#">Mot de passe oublié</a>

@@ -1,45 +1,184 @@
 @media (prefers-color-scheme: light) {
 	:root {
-
+		--svgfill: black;
 	}
-	body{
+
+	body {
 		background-image: url(/TP4/medias/img/darkhomepage.jpg);
 	}
 }
+
 @media (prefers-color-scheme: dark) {
 	:root {
-		
+		--svgfill: white;
+		--bgticket: #ffffff3d;
 	}
-	
-	body{
-		background-image: url(/TP4/medias/img/darkhomepage.jpg);
+
+	body {
+		background-image: url(/TP4/medias/img/backgroundhome.png);
 	}
 }
 
-body{
+body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
 }
-.fondflou{
+
+.fondflou {
 	backdrop-filter: blur(20px);
+	height: 100vh;
 }
-nav{
+
+nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	height: 50px;
 	align-items: center;
 }
-nav img{
+
+nav img {
 	width: 20px;
 	height: 20px;
 }
-nav input{
+
+nav input {
 	width: 370px;
 	background-color: black;
 	border: 0;
 	border-radius: 100px;
 	height: 30px;
 	padding: 0px 15px;
+}
+
+section#mainhome {
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	height: 90vh;
+}
+
+section#innerhome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 94vh;
+}
+
+.hometrain {
+	width: 25%;
+	border-radius: 20px;
+}
+
+#mainhome>section {
+	width: 100%;
+	padding: 0 40px;
+	background-color: #00000082;
+	margin-left: 20px;
+	border-radius: 20px;
+}
+
+.topticket {
+	background-color: var(--bgticket);
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 30px;
+}
+
+.bottomticket {
+	user-select: none;
+	padding: 5px 50px;
+	background-color: var(--bgticket);
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.bottomticket,
+.bottomticket * {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.bottomticket div {
+	margin-right: 20px;
+}
+
+.bottomticket span {
+	margin-left: 10px;
+}
+
+/* Icons */
+svg#calendars,
+#typetrain,
+#destination {
+	height: 20px !important;
+	width: 20px !important;
+}
+
+#clock {
+	height: 25px !important;
+	width: 25px !important;
+}
+
+#money {
+	height: 30px !important;
+	width: 30px !important;
+}
+
+svg * {
+	fill: var(--svgfill);
+}
+
+
+/* Top Ticket*/
+.traveldetail {
+	display: flex;
+	flex-direction: row;
+}
+
+.priceANDbook {
+	align-items: center;
+	display: flex;
+}
+
+.priceANDbook button {
+	padding: 10px 30px;
+	border: 0;
+	border-radius: 8px;
+	margin-left: 20px;
+	background-color: var(--accentcolor);
+	font-size: 105%;
+}
+
+#price {
+	background-color: #ffffff4f;
+	margin: 0;
+	height: 40px;
+	border-radius: 100px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.trajet>div {
+	border-radius: 100px;
+	background-color: #ffffff4f;
+	padding: 9px 25px;
+	display: flex;
+	align-items: center;
+}
+
+.trajet span {
+	margin-left: 10px;
+	font-size: 110%;
+}
+
+.trajet h3 {
+	margin: 10px 0 5px 10px;
 }
