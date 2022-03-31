@@ -28,12 +28,12 @@
 		--titlecolor: white;
 		--default-color: #ffffffde;
 		--text-secondary: #ffffffc8;
-		--text-tertiary: #d4d4d466;
+		--text-tertiary: #d4d4d47c;
 
 		/* Colors */
 		--bg-color:#212121;
 		--card:rgba(0, 0, 0, 0.849);
-		--box:rgba(37, 37, 37, 0.849);
+		--box:rgba(59, 59, 59, 0.849);
 		--accentcolor: rgba(0, 174, 255, 0.664);
 	}
 }
