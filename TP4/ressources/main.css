@@ -61,3 +61,17 @@ p, span{
 input{
 	color: whitesmoke;
 }
+
+
+
+
+/*ScrollBar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #444;
+}
+::-webkit-scrollbar-track {
+    background: #252525;
+}

@@ -86,7 +86,7 @@ section#innerhome {
 	margin-bottom: 5px;
 	display: flex;
 	justify-content: space-between;
-	padding: 5px 30px;
+    padding: 5px 30px 13px 30px;
 }
 
 .bottomticket {
@@ -95,6 +95,7 @@ section#innerhome {
 	background-color: var(--bgticket);
 	border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
+	margin-bottom: 20px;
 }
 
 .bottomticket,
@@ -138,9 +139,12 @@ svg * {
 /* Top Ticket*/
 .traveldetail {
 	display: flex;
+	align-items: end;
 	flex-direction: row;
 }
-
+.traveldetail>p{
+	margin: 10px 25px;
+}
 .priceANDbook {
 	align-items: center;
 	display: flex;
@@ -181,4 +185,9 @@ svg * {
 
 .trajet h3 {
 	margin: 10px 0 5px 10px;
+}
+
+.ticketsaredisplayedherelol{
+    overflow: auto;
+    height: 89%;
 }
