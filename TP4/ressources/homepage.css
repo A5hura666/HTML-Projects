@@ -56,29 +56,37 @@ section#mainhome {
 	display: flex;
 	flex-direction: row;
 	width: 95%;
-	height: 90vh;
+	/*height: 90vh;*/
+	flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
 }
 
 section#innerhome {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 94vh;
+	/*height: 94vh;*/
 }
 
 .hometrain {
-	width: 25%;
-	border-radius: 20px;
+    width: 20%;
+    min-width: 80px !important;
+    border-radius: 20px;
 }
 
 #mainhome>section {
-	width: 100%;
+	width: 65%;
 	padding: 0 40px;
 	background-color: #00000082;
 	margin-left: 20px;
+    height: 90vh;
 	border-radius: 20px;
 }
-
+#mainhome>div {
+    background-image: url(https://telegra.ph/file/819e8bd3e4d13afa604cd.png);
+    width: 26%;
+    border-radius: 20px;
+}
 .topticket {
 	background-color: var(--bgticket);
 	border-top-left-radius: 30px;
@@ -189,5 +197,14 @@ svg * {
 
 .ticketsaredisplayedherelol{
     overflow: auto;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 89%;
+}
+
+article.ticket {
+    max-width: 1000px;
+    min-width: 70%;
 }
