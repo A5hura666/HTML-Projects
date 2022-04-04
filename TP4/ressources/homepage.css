@@ -56,7 +56,7 @@ section#mainhome {
 	display: flex;
 	flex-direction: row;
 	width: 95%;
-	height: 90vh;
+	/*height: 90vh;*/
 	flex-wrap: wrap-reverse;
     justify-content: space-evenly;
 }
@@ -65,7 +65,7 @@ section#innerhome {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 94vh;
+	/*height: 94vh;*/
 }
 
 .hometrain {
