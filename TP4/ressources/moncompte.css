@@ -1,0 +1,37 @@
+.mainstream{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.mainform{
+    background-color: black;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    height: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 150%;
+}
+
+
+.soustitle{
+    font-size: 130%;
+}
+
+article{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.sect{
+    width: 75%;
+}
