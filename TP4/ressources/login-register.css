@@ -19,7 +19,7 @@ body{
 
 
 /*pour page inscription1*/
-.sect_ins{
+body>section{
     border-radius: 15px;
     background-color: var(--card);
     color: var(--default-color);
@@ -55,8 +55,6 @@ body{
 h1{
     font-size:50px;
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 h2{
@@ -75,7 +73,6 @@ h2{
 article{
     width:100%;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -101,6 +98,8 @@ form{
 
 #submit,#bouton{
     border-radius: 20px;
+    
+    height: 40px;
 }
 
 .boutons{
@@ -132,6 +131,7 @@ a {
 }
 .form_connexion article * {
     width: 250px;
+    height: 25px;
 }
 
 p{
@@ -140,4 +140,8 @@ p{
 
 label{
     text-align: left;
+}
+
+.forgotten-password{
+    margin-bottom: -20px;
 }
