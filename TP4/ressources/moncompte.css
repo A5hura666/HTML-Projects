@@ -1,14 +1,16 @@
 .mainstream{
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    margin-top: 40px;
 }
 
 
 .mainform{
-    background-color: black;
+    background-color: var(--card);
     border-radius: 20px;
     padding: 30px;
-    margin: 20px;
     height: 500px;
 }
 
@@ -19,7 +21,6 @@ form{
     color: whitesmoke;
     font-size: 150%;
 }
-
 
 .soustitle{
     font-size: 130%;
@@ -34,4 +35,21 @@ article{
 
 .sect{
     width: 75%;
+}
+
+input{
+    background-color: var(--box);
+    border: 0;
+    color: var(--default-color);
+    padding: 7px 28px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.pencil{
+    width: 5%;
+}
+
+.img_femme_heureuse{
+    width:100%;
 }

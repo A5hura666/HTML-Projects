@@ -1,0 +1,17 @@
+body{
+    background-color: var(--bg-color);
+}
+
+h2{
+    font-size: xx-large;
+}
+
+.mainto{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.img_harry{
+    width: 20%;
+}
