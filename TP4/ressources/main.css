@@ -61,7 +61,9 @@ p, span{
 input{
 	color: whitesmoke;
 }
-
+.hidden{
+	display: none;
+}
 
 
 

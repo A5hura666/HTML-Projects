@@ -145,3 +145,18 @@ label{
 .forgotten-password{
     margin-bottom: -20px;
 }
+
+
+
+.error p {
+    margin: 0;
+    color: whitesmoke;
+}
+
+.error {
+    position: absolute;
+    top: 50px;
+    background-color: darkred;
+    padding: 15px 35px;
+    border-radius: 6px;
+}

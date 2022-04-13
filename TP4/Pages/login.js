@@ -7,22 +7,45 @@ fs.readFile('../database.json', (err, data) => {
 })*/
 
 document.querySelector('#valider').addEventListener('click', webrequest);
-
-async function webrequest(){
+//sam.etegal@test.com
+//http://gigondas:1111/sprietna/ihm/tp4/users
+//http://gigondas:1111/sprietna/ihm/tp4/users/info/${id}
+async function webrequest() {
     let enteredepass = document.getElementById('password').value
     let enteredemail = document.getElementById('identifiant').value
-    if(enteredepass === '' || enteredemail === ''){
-        console.log('Entre qqch fréro');
-    }else{
-        let promise = await fetch('../ressources/database.json')
-        let test = await promise.json()
-        test.forEach(element => {
-            if(element.password === enteredepass && element.email === enteredemail){
-                console.log("Bienvenue salope");
-                //break;
-            }else{
-                console.log('T\'a pas de droits esclave')
-            }
-        });
+    if (enteredepass === '' || enteredemail === '') {
+        document.querySelector('.error').classList.remove('hidden');
+        document.querySelector('.error>p').innerHTML = "Merci d'entrer un mail et mot de passe";
+    } else {
+        fetch('http://gigondas:1111/sprietna/ihm/tp4/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                mail: enteredemail,
+                password: enteredepass
+            })
+        })
+            .then((response) => {
+                if (response.ok) {
+                    return response.text();
+                } else {
+                    throw response;
+                }
+            })
+            .then((userId) => {
+                console.log(userId);
+                window.location.replace(`/TP4`)
+            })
+            .catch((error) => {
+                error.text().then((errorMessage) => {
+                    document.querySelector('.error').classList.remove('hidden');
+                    document.querySelector('.error>p').innerHTML = "Erreur: " + errorMessage;
+                });
+            });
     }
 }
+
+
+
