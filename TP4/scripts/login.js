@@ -1,11 +1,3 @@
-/*const fs = require('fs')
-  
-fs.readFile('../database.json', (err, data) => {
-    if (err) throw err;
-  
-    console.log(data.toString());
-})*/
-
 document.querySelector('#valider').addEventListener('click', webrequest);
 //sam.etegal@test.com
 //http://gigondas:1111/sprietna/ihm/tp4/users
