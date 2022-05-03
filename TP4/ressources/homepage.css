@@ -4,7 +4,7 @@
 	}
 
 	body {
-		background-image: url(/TP4/medias/img/darkhomepage.jpg);
+		background-image: url(https://i.imgur.com/ghbucRf.jpg);
 	}
 }
 
@@ -45,7 +45,7 @@ nav img {
 
 nav input {
 	width: 370px;
-	background-color: black;
+	background-color: var(--searchbg);
 	border: 0;
 	border-radius: 100px;
 	height: 30px;
@@ -77,7 +77,7 @@ section#innerhome {
 #mainhome>section {
 	width: 65%;
 	padding: 0 40px;
-	background-color: #00000082;
+	background-color: var(--card);	/*#00000082;*/
 	margin-left: 20px;
     height: 90vh;
 	border-radius: 20px;
@@ -88,7 +88,7 @@ section#innerhome {
     border-radius: 20px;
 }
 .topticket {
-	background-color: var(--bgticket);
+	background-color: var(--box);
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 	margin-bottom: 5px;
@@ -100,7 +100,7 @@ section#innerhome {
 .bottomticket {
 	user-select: none;
 	padding: 5px 50px;
-	background-color: var(--bgticket);
+	background-color: var(--box	 );
 	border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 	margin-bottom: 20px;

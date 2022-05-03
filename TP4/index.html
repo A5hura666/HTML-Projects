@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="ressources/main.css">
 	<link rel="stylesheet" href="ressources/homepage.css">
 	<link rel="stylesheet" href="ressources/responsive.css">
+	<link rel="stylesheet" href="ressources/search.css">
+
 	<meta name="author" content="Yohann69">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -18,7 +20,27 @@
 			<nav>
 				<img src="medias/img/hamburger.png" alt="Bouton Hamburger">
 				<form action="">
-					<input type="text" id="search" name="search" placeholder="Entrez un terme de recherche">
+					<input onclick="getcities()" type="text" id="search" name="search" placeholder="Entrez un terme de recherche">
+
+					<section>
+						
+
+						<input type="text" id="origin" name="orinin" list="citylist" placeholder="Ex: Lyon"></input>
+						
+						<input type="text" id="destination" name="destination" list="citylist" placeholder="Ex: Valence"></input>
+						
+						
+						<datalist name="citylist" id="citylist">
+
+						</datalist>
+
+						<input type="date" id="departure" name="departure" placeholder="Ex: 10/11/2022">
+						<input type="time" id="dpthour" name="dpthour" placeholder="Ex: 10h11">
+
+					</section>
+
+
+
 				</form>
 				<a href="Pages/connexion.html"><img src="medias/img/user.png" alt="User Icon"></a>
 			</nav>
@@ -39,7 +61,7 @@
 		<footer>
 			
 		</footer>
-		<script src="/TP4/scripts/main.js"></script>
+		<script src="/scripts/main.js"></script>
 	</section>
 </body>
 
