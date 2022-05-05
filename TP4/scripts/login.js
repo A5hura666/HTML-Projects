@@ -29,18 +29,8 @@ async function webrequest() {
             })
             .then((userId) => {
                 console.log(userId);
-                                
-                let cookies = (document.cookie).split(';')
-                let trouve = false
-                for(let i = 0; i < cookies.length; i++) {
-                    if(cookies[i].split('=')[0] == "UserID"){
-                        document.cookie = `UserID=${userId}; expires=30; path=/`;
-                        trouve=true;
-                    }
-                }
-                if(!trouve){
-                    document.cookie = "UserID" + "=" + userId + ";" + 30 + "; path=/";
-                }
+                
+                document.cookie = "UserID" + "=" + userId + ";" + 30 + "; path=/";
 
                 
                window.location.replace(`/`)

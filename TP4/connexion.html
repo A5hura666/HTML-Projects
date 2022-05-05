@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Connexion</title>
+    <link rel="stylesheet" href="/ressources/main.css">
+    <link rel="stylesheet" href="/ressources/login-register.css">
+    <meta name="author" content="Yohann & Ethan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="error hidden">
+        <p>Error: </p>
+    </div>
+    <section>
+        <article>
+            <h1>Connexion</h1>
+            <h2>TEF</h2>
+        </article>
+        <form action="post">
+            <section class="form_connexion">
+                <article>
+                    <label for="identifiant">Identifiant</label>
+                    <input type="text" id="identifiant" name="identifiant" placeholder="Identifiant">
+                </article>
+                <article>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </article>
+            </section>
+            <section class="boutons">
+                <input id="valider" type="button" value="Valider">
+                <a href="inscription.html">
+                    <input id="bouton" type="button" value="Inscription">
+                </a>
+            </section>
+        </form>
+        <a href="#" class="forgotten-password">Mot de passe oublié</a>
+    </section>
+    <script src="/scripts/login.js"></script>
+
+</body>
+
+</html>

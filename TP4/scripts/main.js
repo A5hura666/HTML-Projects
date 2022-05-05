@@ -1,9 +1,20 @@
+function loginoruserpage(){
+	if(document.cookie.indexOf("UserID") != -1){
+		window.location.replace(`/Pages/mon_compte.html`)
+	}else{
+		window.location.replace(`/connexion.html`)
+	}
+}
+
+
+
+
 getcities();
-async function getcities(){
+async function getcities() {
 	let req = await (await fetch('https://gigondas.iut-valence.fr:1112/sprietna/ihm/tp4/cities')).json();
-	
+
 	document.querySelector('form>section').style.display = 'felx';
-	for(let i = 0; i<req.length; i++){
+	for (let i = 0; i < req.length; i++) {
 		document.querySelector('#citylist').innerHTML += `<option value="${req[i].name}"></option>`;
 	}
 }
@@ -19,7 +30,7 @@ async function getTravels() {
 	document.querySelector('.ticketsaredisplayedherelol').innerHTML = ""
 
 
-	for (let element = 0;  element < 50/*schedules.length*/; element++) {
+	for (let element = 0; element < 50/*schedules.length*/; element++) {
 		let hours = parseInt(Math.floor(schedules[element].travel.duration / 60));
 		let minutes = parseInt(schedules[element].travel.duration % 60);
 		let departhours = parseInt(((schedules[element].departureTime).split(':'))[0])
