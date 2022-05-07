@@ -1,0 +1,126 @@
+
+.topticket {
+	background-color: var(--box);
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+    padding: 5px 30px 13px 30px;
+}
+
+.bottomticket {
+	user-select: none;
+	padding: 5px 50px;
+	background-color: var(--box	 );
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	margin-bottom: 20px;
+}
+
+.bottomticket,
+.bottomticket * {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.bottomticket div {
+	margin-right: 20px;
+}
+
+.bottomticket span {
+	margin-left: 10px;
+}
+
+/* Icons */
+svg#calendars,
+#typetrain,
+#destination {
+	height: 20px !important;
+	width: 20px !important;
+}
+
+#clock {
+	height: 25px !important;
+	width: 25px !important;
+}
+
+#money {
+	height: 30px !important;
+	width: 30px !important;
+}
+
+svg * {
+	fill: var(--svgfill);
+}
+
+
+/* Top Ticket*/
+.traveldetail {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+	user-select: none;
+}
+.traveldetail>p{
+	margin: 10px 25px;
+}
+.priceANDbook {
+	align-items: center;
+	display: flex;
+}
+
+.priceANDbook button {
+	padding: 10px 30px;
+	border: 0;
+	border-radius: 8px;
+	margin-left: 20px;
+	background-color: var(--accentcolor);
+	font-size: 105%;
+}
+
+#price {
+	background-color: #ffffff4f;
+	margin: 0;
+    height: 35px;
+    border-radius: 100px;
+    width: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.trajet>div {
+	border-radius: 100px;
+	background-color: #ffffff4f;
+	padding: 9px 25px;
+	display: flex;
+	align-items: center;
+}
+
+.trajet span {
+	margin-left: 10px;
+	font-size: 110%;
+}
+
+.trajet h3 {
+	margin: 10px 0 5px 10px;
+}
+
+.ticketsaredisplayedherelol{
+    overflow: auto;
+    align-items: center;
+	width: 90%;
+	padding: 0 5%;
+    height: 89%;
+}
+
+article.ticket {
+    max-width: 1000px;
+    min-width: 70%;
+}
+
+.ticketsaredisplayedherelol>h1{
+	font-size: 200%;
+}

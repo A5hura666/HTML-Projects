@@ -1,11 +1,10 @@
 function loginoruserpage(){
-	if(document.cookie.indexOf("UserID") != -1){
+	if(document.cookie.indexOf("UserID") != -1){  	// si UserID existe dans les cookies (si il n'existe pas son index est -1)
 		window.location.replace(`/Pages/mon_compte.html`)
 	}else{
 		window.location.replace(`/connexion.html`)
 	}
 }
-
 
 
 
@@ -57,7 +56,7 @@ async function getTravels() {
 											<span class="start">${schedules[element].travel.from.city} - ${schedules[element].departureTime}</span>
 										</div>
 									</section>
-									<p>-></p>
+									<p>→</p>
 									<section class="trajet arrivée">
 										<h3>Départ</h3>
 										<div>

@@ -1,5 +1,51 @@
 @media only screen  and (max-width: 1170px){
     #mainhome>section {
         width: 100%;
+        padding: 0;
+        margin: 0 5px;
+    }
+    section#mainhome {
+        width: 100%;
+    }
+    .ticketsaredisplayedherelol {
+       padding: 0 5px;
+       width: 96%;
+    }
+
+    nav input {
+        width: inherit;
+    }
+
+
+
+    .topticket{
+        padding: 5px;
+    }
+    .bottomticket{
+        padding: 5px 17px;
+        
+    }
+    .trajet>div {
+       padding: 4px 10px;
+    }
+    .traveldetail>p {
+        margin: 10px 5px;
+    }
+    .priceANDbook button {
+        padding: 10px 5px;
+        margin-left: 5px;
+    }
+    .traveldetail svg {
+        display: none;
+    }
+    .trajet span {
+        margin-left: 5px;
+        font-size: 90%;
+    }
+    .trajet h3 {
+        font-size: 95%;
+    }
+    .priceANDbook button {
+        font-size: 95%;
     }
 }
