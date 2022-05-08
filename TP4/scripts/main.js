@@ -124,7 +124,7 @@ async function getTravels(url) {
 										<article id="price">
 											<p class="price">${schedules[element].price}€</p>
 										</article>
-										<button onclick="bookticket(3)">Réserver</button>
+										<button onclick="bookticket(${schedules[element].id})">Réserver</button>
 									</div>
 								</section>
 	
