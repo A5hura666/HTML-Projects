@@ -1,7 +1,7 @@
-function loginoruserpage(){
-	if(document.cookie.indexOf("UserID") != -1){  	// si UserID existe dans les cookies (si il n'existe pas son index est -1)
+function loginoruserpage() {
+	if (document.cookie.indexOf("UserID") != -1) {  	// si UserID existe dans les cookies (si il n'existe pas son index est -1)
 		window.location.replace(`/Pages/mon_compte.html`)
-	}else{
+	} else {
 		window.location.replace(`/connexion.html`)
 	}
 }
@@ -9,7 +9,7 @@ function loginoruserpage(){
 
 
 async function getcities() {
-	
+
 	document.querySelector('form>section').style.display = 'flex';
 	let req = await (await fetch('https://gigondas.iut-valence.fr:1112/sprietna/ihm/tp4/cities')).json();
 
@@ -19,21 +19,21 @@ async function getcities() {
 	}
 }
 
-async function addstations(type, value){
+async function addstations(type, value) {
 	let req = await (await fetch(`https://gigondas.iut-valence.fr:1112/sprietna/ihm/tp4/stations`)).json();
 	document.querySelector(`#${type}`).innerHTML = '';
 	for (let i = 0; i < req.length; i++) {
-		if(req[i].city == value){
+		if (req[i].city == value) {
 			document.querySelector(`#${type}`).innerHTML += `<option value="${req[i].name}"></option>`;
 		}
 	}
-	
+
 
 }
 //cityFrom=1&stationFrom=&cityTo=4&stationTo=&date=&timeFrom=
 
 
-async function decodetravels(){
+async function decodetravels() {
 	document.querySelector('form>section').style.display = 'none';
 	let finalurl = '?';
 	let cityorigin = false;
@@ -41,25 +41,25 @@ async function decodetravels(){
 	let citydest = false;
 	let stationdest = false
 	let req = await (await fetch(`https://gigondas.iut-valence.fr:1112/sprietna/ihm/tp4/stations`)).json();
-	
+
 	for (let i = 0; i < req.length; i++) {
-		if(req[i].city == document.querySelector('#origin').value && cityorigin == false){
+		if (req[i].city == document.querySelector('#origin').value && cityorigin == false) {
 			finalurl = finalurl + 'cityFrom=' + req[i].cityId;
 			cityorigin = true;
 		}
 	}
 
 	for (let i = 0; i < req.length; i++) {
-		
-		if(req[i].name == document.querySelector('#stationorigin').value && stationorigin == false){
+
+		if (req[i].name == document.querySelector('#stationorigin').value && stationorigin == false) {
 			finalurl += '&stationFrom=' + req[i].id;
 			stationorigin = true;
 		}
-		if(req[i].city == document.querySelector('#destinationsearch').value && citydest == false){
+		if (req[i].city == document.querySelector('#destinationsearch').value && citydest == false) {
 			finalurl += '&cityTo=' + req[i].cityId;
 			citydest = true;
 		}
-		if(req[i].name == document.querySelector('#stationdestination').value && stationdest == false){
+		if (req[i].name == document.querySelector('#stationdestination').value && stationdest == false) {
 			finalurl += '&stationTo=' + req[i].id;
 			stationdest = true;
 		}
@@ -81,25 +81,24 @@ async function getTravels(url) {
 
 	document.querySelector('.ticketsaredisplayedherelol').innerHTML = ""
 
-	if(schedules.length == 0){
+	if (schedules.length == 0) {
 		document.querySelector('.ticketsaredisplayedherelol').innerHTML = "<h1>Aucun trajet ne correspond à votre recherche</h1>"
-	}else{
+	} else {
 		for (let element = 0; element < schedules.length; element++) {
 			let hours = parseInt(Math.floor(schedules[element].travel.duration / 60));
 			let minutes = parseInt(schedules[element].travel.duration % 60);
 			let departhours = parseInt(((schedules[element].departureTime).split(':'))[0])
 			let departminutes = parseInt(((schedules[element].departureTime).split(':'))[1])
-	
-	
+
+
 			let arrivalhours = hours + departhours
 			let arrivalminutes = minutes + departminutes
 			if (arrivalminutes > 59) {
 				arrivalminutes = arrivalminutes % 60
 				arrivalhours = arrivalhours + Math.floor(arrivalminutes / 60)
 			}
-	
-	
-	
+
+
 			document.querySelector('.ticketsaredisplayedherelol').innerHTML += `
 			<article class="ticket ticket_n${element}">
 								<section class="topticket">
@@ -124,7 +123,7 @@ async function getTravels(url) {
 										<article id="price">
 											<p class="price">${schedules[element].price}€</p>
 										</article>
-										<button onclick="bookticket(${schedules[element].id})">Réserver</button>
+										<button onclick="bookticket(${schedules[element].id})" class="tickket ${schedules[element].id}">Réserver</button>
 									</div>
 								</section>
 	
@@ -149,6 +148,7 @@ async function getTravels(url) {
 							</article>
 			`
 		}
+
 	}
 
 
