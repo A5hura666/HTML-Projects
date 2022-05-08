@@ -26,18 +26,23 @@
 					<section>
 						
 
-						<input type="text" id="origin" name="orinin" list="citylist" placeholder="Ex: Lyon"></input>
+						<input type="text" id="origin" name="cityFrom" list="citylist" placeholder="Ex: Lyon" onChange="addstations('stationfrom', document.querySelector('#origin').value);"></input>
+						<input type="text" id="stationorigin" name="stationFrom" list="stationfrom" placeholder="Ex: Lyon Jean Macé"></input>
 						
-						<input type="text" id="destinationsearch" name="destination" list="citylist" placeholder="Ex: Valence"></input>
+						<input type="text" id="destinationsearch" name="cityTo" list="citylist" placeholder="Ex: Valence" onChange="addstations('stationto', document.querySelector('#destinationsearch').value);"></input>
+						<input type="text" id="stationdestination" name="stationTo" list="stationto" placeholder="Ex: Valence Ville"></input>
 						
 						
-						<datalist name="citylist" id="citylist">
+						
+						<datalist name="citylist" id="citylist"></datalist>
+						<datalist name="stationfrom" id="stationfrom"></datalist>
+						<datalist name="stationto" id="stationto"></datalist>
 
-						</datalist>
+						
 
-						<input type="date" id="departure" name="departure" placeholder="Ex: 10/11/2022">
-						<input type="time" id="dpthour" name="dpthour" placeholder="Ex: 10h11">
-
+						<input type="date" id="departure" name="date" placeholder="Ex: 10/11/2022">
+						<input type="time" id="dpthour" name="timeFrom" placeholder="Ex: 10h11">
+						<button name="data" type="button" onclick="decodetravels()">Click</button>
 					</section>
 
 
@@ -63,7 +68,6 @@
 			
 		</section>
 	</footer>
-	<script src="/scripts/displaytickets.js"></script>
 	<script src="/scripts/main.js"></script>
 </body>
 
