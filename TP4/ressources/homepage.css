@@ -88,3 +88,10 @@ section#innerhome {
     width: 26%;
     border-radius: 20px;
 }
+
+
+.navcart::after{
+	content: "0";
+	display: block;
+
+}

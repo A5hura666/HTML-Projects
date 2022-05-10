@@ -17,9 +17,12 @@
 		/* Colors */
 		--bg-color: white;
 		--card: #00000029;
+		--svgfill: white;
 		/*#cfcfcfd8;*/
 		--box: rgba(189, 189, 189, 0.849);
 		--accentcolor: #00a2eda9;
+
+
 
 	}
 
@@ -47,6 +50,7 @@
 		/* Colors */
 		--bg-color: #212121;
 		--card: #0000006e;
+		--svgfill: black;
 		/*rgba(0, 0, 0, 0.849);*/
 		--box: #ffffff3d;
 		/*rgba(59, 59, 59, 0.849);*/
@@ -106,4 +110,13 @@ input {
 /*ScrollBar*/
 ::-webkit-scrollbar {
 	width: 10px;
+}
+
+svg, svg * {
+	fill: var(--svgfill);
+	color: var(--svgfill)
+	
+}
+nav svg {
+    width: 25px;
 }

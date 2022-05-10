@@ -155,3 +155,10 @@ async function getTravels(url) {
 
 }
 
+
+
+
+async function bookticket(id){
+	document.cookie = "BuyTicket" + "=" + id + ";" + 30 + "; path=/";
+	
+}
