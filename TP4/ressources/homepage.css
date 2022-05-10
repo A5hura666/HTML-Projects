@@ -90,8 +90,11 @@ section#innerhome {
 }
 
 
-.navcart::after{
-	content: "0";
-	display: block;
-
+.navcart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.navcart span{
+	margin-bottom: -5px;
 }

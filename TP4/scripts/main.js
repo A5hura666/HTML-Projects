@@ -159,6 +159,8 @@ async function getTravels(url) {
 
 
 async function bookticket(id){
+	let nb = parseInt(document.querySelector('.navcart span').textContent)
+	nb++
+	document.querySelector('.navcart span').textContent = nb
 	document.cookie = "BuyTicket" + "=" + id + ";" + 30 + "; path=/";
-	
 }
