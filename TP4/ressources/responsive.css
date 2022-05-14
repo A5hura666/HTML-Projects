@@ -13,7 +13,7 @@
     }
 
     nav input {
-        width: inherit;
+        width: auto;
     }
 
 
@@ -47,5 +47,9 @@
     }
     .priceANDbook button {
         font-size: 95%;
+    }
+
+    .searchselection{
+        width: 80%;
     }
 }

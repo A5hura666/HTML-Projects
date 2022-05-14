@@ -18,19 +18,52 @@
 
 form>section{
     display:none;
-}
-
-
-form>section {
     position: absolute;
     top: 50px;
     width: 100%;
     left: 0;
-    display: none;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    height: 200px;
-    background-color: #505050;
+    height: auto;
+    background-color: #383838fa;
+    backdrop-filter: blur(50px);
     justify-content: center;
+}
+
+
+form>section>section {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+
+.searchselection {
+    display: flex;
+    flex-direction: column;
+    background-color: #4c4c4b;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+label{
+    color: var(--default-color);
+    margin: 0 10px 3px;
+}
+form h3 {
+    margin: 10px 0px;
+    font-size: 22px;
+}
+
+form button {
+    margin: 5px;
+    padding: 7px 20px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: var(--accentcolor);
+    color: var(--default-color);
 }
