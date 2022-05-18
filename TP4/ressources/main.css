@@ -13,6 +13,7 @@
 		--default-color: #000000de;
 		--text-secondary: #000000c8;
 		--text-tertiary: #0000005c;
+		--placeholder-color: white;
 
 		/* Colors */
 		--bg-color: white;
@@ -46,6 +47,7 @@
 		--default-color: #ffffffde;
 		--text-secondary: #ffffffc8;
 		--text-tertiary: #d4d4d47c;
+		--placeholder-color: white;
 
 		/* Colors */
 		--bg-color: #212121;
@@ -67,6 +69,7 @@
 	::-webkit-scrollbar-track {
 		background: #252525;
 	}
+
 }
 
 * {
@@ -112,6 +115,24 @@ input {
 	width: 10px;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var(--placeholder-color);
+	opacity: .7;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: var(--placeholder-color);
+	opacity: .7;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: var(--placeholder-color);
+	opacity: .7;
+  }
+
+
+
+
 svg, svg * {
 	fill: var(--svgfill);
 	color: var(--svgfill)
@@ -119,4 +140,7 @@ svg, svg * {
 }
 nav svg {
     width: 25px;
+}
+::-webkit-calendar-picker-indicator {
+	filter: invert(1);
 }

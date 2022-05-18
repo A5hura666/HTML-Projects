@@ -31,6 +31,7 @@ async function webrequest() {
                 console.log(userId);
                 
                 document.cookie = "UserID" + "=" + userId + ";" + 30 + "; path=/";
+                sessionStorage.setItem("UserID", userId);
 
                 
                window.location.replace(`/`)

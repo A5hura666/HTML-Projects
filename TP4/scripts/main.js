@@ -162,5 +162,11 @@ async function bookticket(id){
 	let nb = parseInt(document.querySelector('.navcart span').textContent)
 	nb++
 	document.querySelector('.navcart span').textContent = nb
-	document.cookie = "BuyTicket" + "=" + id + ";" + 30 + "; path=/";
+	if (document.cookie.indexOf("BuyTicket") != -1) {  	// si UserID existe dans les cookies (si il n'existe pas son index est -1)
+		let actualdata = document.cookie.split("BuyTicket=")[1].split(";")[0]
+		let newdata = actualdata + "," + id
+		document.cookie = "BuyTicket=" + newdata + ";" + 30 + "; path=/"
+	} else {
+		document.cookie = "BuyTicket" + "=" + id + ";" + 30 + "; path=/";
+	}
 }
