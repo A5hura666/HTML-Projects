@@ -9,11 +9,9 @@ function loginoruserpage() {
 
 
 async function getcities() {
-
-	document.querySelector('form>section').style.display = 'flex';
 	let req = await (await fetch('https://gigondas.iut-valence.fr:1112/sprietna/ihm/tp4/cities')).json();
 
-	document.querySelector('form>section').style.display = 'felx';
+	document.querySelector('form>section').style.display = 'flex';
 	for (let i = 0; i < req.length; i++) {
 		document.querySelector('#citylist').innerHTML += `<option value="${req[i].name}"></option>`;
 	}
