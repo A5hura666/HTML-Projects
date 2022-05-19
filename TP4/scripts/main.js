@@ -25,8 +25,6 @@ async function addstations(type, value) {
 			document.querySelector(`#${type}`).innerHTML += `<option value="${req[i].name}"></option>`;
 		}
 	}
-
-
 }
 //cityFrom=1&stationFrom=&cityTo=4&stationTo=&date=&timeFrom=
 
@@ -153,9 +151,18 @@ async function getTravels(url) {
 
 }
 
+document.querySelector('.navcart').addEventListener('click', () => {
+	if (document.cookie.indexOf("BuyTicket") != -1) {  	// si BuyTicket existe dans les cookies (si il n'existe pas son index est -1)
+		window.location.replace(`/Pages/panier.html`)
+	} else {
+		alert("Vous n'avez pas encore de tickets dans votre panier");
+	}
+})
 
 for (element of document.cookie.split(';')){
-	if (element.split('=')[0] == 'BuyTicket'){
+	console.log("hey" + element)
+	if (element.split('=')[0].includes('BuyTicket')){
+		console.log("how!")
 		document.querySelector('.navcart span').textContent = (element.split('=')[1].split(',')).length;
 	}
 }

@@ -31,6 +31,7 @@ article{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    margin: 10px;
 }
 
 .sect{
@@ -46,10 +47,21 @@ input{
     border-radius: 10px;
 }
 
-.pencil{
-    width: 5%;
-}
 
 .img_femme_heureuse{
     width:100%;
 }
+
+#deconnexion{
+    font-size: 150%;
+    text-decoration: none;
+    background-color: var(--box);
+    color: var(--default-color);
+    padding: 12px;
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 0;
+}
+

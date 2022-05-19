@@ -16,7 +16,6 @@
 <body>
 	<header class="hider">
 		<h1>Mon compte</h1>
-		<button id="utilisateur" onclick="logout"></button>
 	</header>
 	<section class="main">
 		<nav class="navé">
@@ -26,6 +25,8 @@
 				<a href="historique.html">Historique d'achats</a>
 				<a href="/index.html">Réserver un billet</a>
 			</section>
+			
+			<button id="deconnexion" onclick="logout()">Déconnexion</button>
 			<a href="SAV.html">Aide</a>
 		</nav>
 
@@ -35,32 +36,24 @@
 					<h1 class="soustitle">Identifiant</h1>
 					<article>
 						<label for="mail">Adresse mail</label>
-						<input class="sect" type="email" id="mail" name="mail" placeholder="example@gmail.com"
-							class="form_inscript">
-						<img class="pencil" src="../medias/img/pencil.png" alt="pencil">
+						<input class="sect form_inscript mail" type="email" id="mail" name="mail" placeholder="example@gmail.com">
 					</article>
 					<article>
-						<label for="identifiant">Identifiant</label>
-						<input class="sect" type="mail" id="identifiant" name="identifiant" placeholder="Identifiant"
-							class="form_inscript">
-						<img class="pencil" src="../medias/img/pencil.png" alt="pencil">
+						<label for="identifiant">Adresse</label>
+						<input class="sect form_inscript adresse" type="mail" id="identifiant" name="identifiant" placeholder="Adresse">
 					</article>
 					<article>
 						<label for="password">Mot de passe</label>
-						<input class="sect" type="password" id="password" name="password" placeholder="Password"
-							class="form_inscript">
-						<img class="pencil" src="../medias/img/pencil.png" alt="pencil">
+						<input class="sect form_inscript password" type="password" id="password" name="password" placeholder="Password"> 
 					</article>
 					<h1 class="soustitle">informations Personnelles</h1>
 					<article>
 						<label for="nom">Nom</label>
-						<input class="sect" type="text" id="nom" name="nom" placeholder="Nom" class="form_inscript">
-						<img class="pencil" src="../medias/img/pencil.png" alt="pencil">
+						<input class="sect form_inscript nom" type="text" id="nom" name="nom" placeholder="Nom">
 					</article>
 					<article>
 						<label for="prenom">Prénom</label>
-						<input class="sect" type="text" id="prenom" name="prenom" placeholder="Prénom" class="form_inscript">
-						<img class="pencil" src="../medias/img/pencil.png" alt="pencil">
+						<input class="sect form_inscript prenom" type="text" id="prenom" name="prenom" placeholder="Prénom">
 					</article>
 				</form>
 			</section>
@@ -70,6 +63,7 @@
 			</section>
 		</section>
 		<script src="../scripts/logout.js"></script>
+		<script src="../scripts/mon_compte.js"></script>
 </body>
 
 </html>
