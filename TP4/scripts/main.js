@@ -154,7 +154,11 @@ async function getTravels(url) {
 }
 
 
-
+for (element of document.cookie.split(';')){
+	if (element.split('=')[0] == 'BuyTicket'){
+		document.querySelector('.navcart span').textContent = (element.split('=')[1].split(',')).length;
+	}
+}
 
 async function bookticket(id){
 	let nb = parseInt(document.querySelector('.navcart span').textContent)
